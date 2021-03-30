@@ -1,4 +1,370 @@
-h1 {
-    font-family: BenchNine, cursive;
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
     color: #153053;
 }
+
+/*Visu1*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 150px;
+}
+
+nav {
+    margin-right: 150px;
+    font-family: BenchNine, cursive;
+    font-size: 1.5em;
+    letter-spacing: .1rem;
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0.5em 2em;
+}
+
+nav ul li a {
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li .highlight {
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 2em;
+    border: 3px solid #ffffff;
+    border-radius: 50px;
+    margin-left: 100px;
+
+}
+
+.highlight:hover {
+    background: white;
+    color: #F4B03E;
+    border-radius: 50px;
+    margin-left: 100px;
+    transition: 0.5s ease;
+}
+
+.illuaccueil {
+    float: right;
+    margin-top: -70em;
+    margin-right: -130px;
+}
+
+
+.hero {
+    margin-left: 150px;
+    text-align: center;
+}
+
+.hero h1 {
+    margin-top: 100px;
+    font-size: 5em;
+    font-family: BenchNine, cursive;
+    max-width: 500px;
+    white-space: nowrap;
+
+}
+
+.hero p {
+    font-size: 1.5em;
+    max-width: 500px;
+    font-family: "Josefin Sans", cursive;
+    margin-bottom: 15em;
+}
+
+.hero a {
+    position: absolute;
+    left: 38em;
+    top: 25em;
+    background:#445975;
+    padding: 1em 3em;
+    border-radius: 50px;
+    color: white;
+    font-size: 2em;
+    font-weight: lighter;
+    text-decoration: none;
+    font-family: BenchNine, cursive;
+    letter-spacing: .1rem;
+    min-width: 200px;
+}
+
+.hero a:hover {
+    position: absolute;
+    left: 38em;
+    top: 25em;
+    background:  #153053;
+    padding: 1em 3em;
+    border-radius: 50px;
+    color: white;
+    font-size: 2em;
+    font-weight: lighter;
+    text-decoration: none;
+    font-family: BenchNine, cursive;
+    letter-spacing: .1rem;
+    transition: 0.5s ease;
+}
+
+/*Visu2*/
+
+.visu2 {
+    display: flex;
+    flex-flow: nowrap;
+    align-items: center;
+
+}
+
+.selection {
+    min-width: 100px;
+}
+
+/*
+.selection::after {
+    content: url("./img/arrow.svg");
+
+}
+*/
+.block {
+    display: block;
+    margin-left: 20em;
+    text-align: center;
+    white-space:nowrap;
+
+}
+
+.block .choisissez h2 {
+    font-family: BenchNine, cursive;
+    font-size: 4.5em;
+}
+
+
+.block .selection a {
+    font-family: "Josefin Sans", cursive;
+    font-size: 2em;
+    text-decoration: none;
+    color: #153053;
+}
+
+.block .selection a:hover {
+    min-width: 400px;
+    font-family: "Josefin Sans", cursive;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+.podium {
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+/*Visu3*/
+
+.visu3 {
+
+}
+
+.simple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 50px;
+
+}
+
+.simple h3 {
+    font-family: BenchNine, cursive;
+    font-size: 4em;
+}
+
+.align {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: nowrap;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
+
+.align h4 {
+    font-family: "Josefin Sans", cursive;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.align p {
+    font-family: "Open Sans", cursive;
+    font-size: 1em;
+
+}
+
+
+
+/*Visu4*/
+
+.titreequipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.titreequipe {
+    font-family: BenchNine, cursive;
+    font-size: 4em;
+}
+
+
+
+.align2 {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
+
+.align2 h4 {
+    font-family: "Josefin Sans", cursive;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.align2 p {
+    font-family: "Open Sans", cursive;
+    font-size: 1em;
+    font-weight: 500;
+
+}
+
+
+
+/*Footer*/
+footer {
+    background: url("./img/Fond footer.png");
+    background-repeat: no-repeat;
+    height: 350px;
+    margin-top: 200px;
+}
+
+footer a,footer h5{
+    font-family: "Josefin Sans", cursive;
+    color: white;
+}
+
+
+
+footer .conteneur{
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+}
+
+footer .conteneur div{
+    padding-left:   10%;
+    padding-right: 10%;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+footer .image {
+    display: block;
+    float: right;
+    padding-right: 15px;
+    margin-top: -75px;
+}
+
+footer h5{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+
+}
+
+footer .bas{
+    text-align: center;
+    padding-top: 40px;
+
+}
+
+footer .conteneur a:last-of-type{
+    margin-left: 50px;
+    border: 3px solid white;
+    border-radius: 2em;
+}
+
+footer a{
+    padding: 0.5em 2em;
+    font-size: 2em;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+footer .highlight2:hover{
+    padding: 0.5em 2em;
+    background: white;
+    color: #153053;
+    font-size: 2em;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
