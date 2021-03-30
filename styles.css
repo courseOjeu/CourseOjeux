@@ -9,7 +9,7 @@ body {
     color: #153053;
 }
 
-/*Visu1*/
+/*--------------------------Visu1-----------------------------------*/
 
 header {
     display: flex;
@@ -20,6 +20,11 @@ header {
 
 .logo {
     margin-left: 150px;
+}
+
+.nav {
+    margin-left: 10px;
+
 }
 
 nav {
@@ -68,8 +73,8 @@ nav ul li .highlight {
 
 .illuaccueil {
     float: right;
-    margin-top: -70em;
-    margin-right: -130px;
+    margin-top: -65em;
+    margin-right: -3em;
 }
 
 
@@ -80,24 +85,24 @@ nav ul li .highlight {
 
 .hero h1 {
     margin-top: 100px;
-    font-size: 5em;
+    font-size: 4em;
     font-family: BenchNine, cursive;
-    max-width: 500px;
+    max-width: 400px;
     white-space: nowrap;
 
 }
 
 .hero p {
     font-size: 1.5em;
-    max-width: 500px;
+    max-width: 400px;
     font-family: "Josefin Sans", cursive;
     margin-bottom: 15em;
 }
 
 .hero a {
     position: absolute;
-    left: 38em;
-    top: 25em;
+    left: 25em;
+    top: 22em;
     background:#445975;
     padding: 1em 3em;
     border-radius: 50px;
@@ -112,8 +117,8 @@ nav ul li .highlight {
 
 .hero a:hover {
     position: absolute;
-    left: 38em;
-    top: 25em;
+    left: 25em;
+    top: 22em;
     background:  #153053;
     padding: 1em 3em;
     border-radius: 50px;
@@ -126,12 +131,13 @@ nav ul li .highlight {
     transition: 0.5s ease;
 }
 
-/*Visu2*/
+/*--------------------------Visu2-----------------------------------*/
 
 .visu2 {
     display: flex;
     flex-flow: nowrap;
     align-items: center;
+
 
 }
 
@@ -147,7 +153,7 @@ nav ul li .highlight {
 */
 .block {
     display: block;
-    margin-left: 20em;
+    margin-left: 12em;
     text-align: center;
     white-space:nowrap;
 
@@ -155,7 +161,7 @@ nav ul li .highlight {
 
 .block .choisissez h2 {
     font-family: BenchNine, cursive;
-    font-size: 4.5em;
+    font-size: 3.5em;
 }
 
 
@@ -178,7 +184,8 @@ nav ul li .highlight {
     margin-top: 100px;
 }
 
-/*Visu3*/
+/*--------------------------Visu3-----------------------------------*/
+
 
 .visu3 {
 
@@ -221,9 +228,16 @@ nav ul li .highlight {
 
 }
 
+.align .decouverte {
+    margin-left: 30px;
+    margin-right: 30px;
+}
 
 
-/*Visu4*/
+
+/*--------------------------Visu4-----------------------------------*/
+
+
 
 .visu4 img {
     max-width: 100%;
@@ -240,7 +254,7 @@ nav ul li .highlight {
 
 .titreequipe {
     font-family: BenchNine, cursive;
-    font-size: 4em;
+    font-size: 3em;
 }
 
 
@@ -254,6 +268,14 @@ nav ul li .highlight {
     margin-left: auto;
     margin-right: auto;
     max-width: 80%;
+
+}
+.bande {
+    max-width: 100%;
+    background: url("./img/vague_derriere_profils.png");
+    background-repeat: no-repeat;
+    margin-bottom: -20px;
+
 }
 
 .align2 h4 {
@@ -273,15 +295,21 @@ nav ul li .highlight {
     font-size: 1em;
 }
 
+.align2 img {
+    width: 220px;
+    height: 220px;
+}
 
 
-/*Footer*/
+/*--------------------------Footer-----------------------------------*/
+
 footer {
     background: url("./img/Fond footer.png");
     background-repeat: no-repeat;
     height: 350px;
-    margin-top: 200px;
+    margin-top: 300px;
 }
+
 
 footer a,footer h5{
     font-family: "Josefin Sans", cursive;
@@ -331,7 +359,7 @@ footer .conteneur a:last-of-type{
 
 footer a{
     padding: 0.5em 2em;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 400;
     text-decoration: none;
 }
@@ -340,7 +368,7 @@ footer .highlight2:hover{
     padding: 0.5em 2em;
     background: white;
     color: #153053;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 400;
     text-decoration: none;
     transition: 0.5s ease;

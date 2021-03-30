@@ -28,13 +28,13 @@
     </header>
     <main class="container">
         <section class="hero container">
-            <h1>A vos marques, prêts ? <br>Jouez !</h1>
-            <p>Entrez dans la course en découvrant les meilleurs jeux de société</p>
+            <h1 data-sal="slide-right" data-sal-duration="1500">A vos marques, prêts ? <br>Jouez !</h1>
+            <p data-sal="slide-left" data-sal-duration="1500">Entrez dans la course en découvrant les meilleurs jeux de société</p>
             <a href="#">Découvrir nos jeux</a>
         </section>
 
             <div class="illuaccueil">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1041.579" height="1092.467" viewBox="0 0 1041.579 1092.467">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="944" viewBox="0 0 1041.579 1092.467">
             <defs>
                 <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
                     <stop offset="0" stop-color="#f4e5d5"/>
@@ -100,7 +100,7 @@
 
         <div class="visu2">
             <div class="podium">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="681" height="950.934" viewBox="0 0 681 950.934">
+                <svg data-sal="slide-right" data-sal-duration="1500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="435" height="607" viewBox="0 0 681 950.934">
                 <g id="Groupe_259" data-name="Groupe 259" transform="translate(-163 -1196.566)">
                     <g id="cercle_fond_podium" data-name="cercle fond podium" transform="translate(163 1196.566)" fill="none" stroke="#143052" stroke-width="25" opacity="0.807">
                         <circle cx="340.5" cy="340.5" r="340.5" stroke="none"/>
@@ -161,7 +161,7 @@
                     </g>
                 </svg>
                 <h4>1. Inscrivez-vous</h4>
-                <p>Créez votre compte afin de découvrir les <br>fonctionnalités qui vous seront attribuées et de pourquoi pas obtenir des récompenses ! </p>
+                <p>Créez votre compte afin de découvrir les fonctionnalités qui vous seront attribuées et de pourquoi pas obtenir des récompenses ! </p>
             </div>
             <div class="decouverte">
                 <svg data-sal="slide-up" data-sal-duration="1500" xmlns="http://www.w3.org/2000/svg" width="108" height="109" viewBox="0 0 216.7 218.72">
@@ -177,7 +177,7 @@
                     </g>
                 </svg>
                 <h4>2. Découvrez</h4>
-                <p>Découvrez les différentes catégories qui <br>rassemblent les meilleurs jeux de société du moment.</p>
+                <p>Découvrez les différentes catégories qui rassemblent les meilleurs jeux de société du moment.</p>
             </div>
             <div class="partage">
                 <svg data-sal="slide-left" data-sal-duration="1500" xmlns="http://www.w3.org/2000/svg" width="108" height="109" viewBox="0 0 216.7 218.72">
@@ -199,7 +199,7 @@
                     </g>
                 </svg>
                 <h4>3. Partagez</h4>
-                <p>L’une des fonctionnalités principale du site, elle <br> vous permettra de discuter avec d’autres utilisateurs et bien plus encore…</p>
+                <p>L’une des fonctionnalités principale du site, elle vous permettra de discuter avec d’autres utilisateurs et bien plus encore…</p>
             </div>
         </div>
     </div>
@@ -207,29 +207,30 @@
         <div class="titreequipe">
             <h2>Notre équipe</h2>
         </div>
-        <div class="align2">
-            <div class="theo" data-sal="slide-up" data-sal-duration="1500" data-sal-delay="250">
-                <img src="img/photo_théo.png" alt="">
-                <h4>Théo Reille</h4>
-                <p>19 ans</p>
-                <strong>Chargé de communication</strong>
-            </div>
+        <div class="bande">
+            <div class="align2">
+                <div class="theo" data-sal="slide-up" data-sal-duration="1500" data-sal-delay="250">
+                    <img src="img/photo_théo.png" alt="">
+                    <h4>Théo Reille</h4>
+                    <p>19 ans</p>
+                    <strong>Chargé de communication</strong>
+                </div>
             <div class="david" data-sal="slide-up" data-sal-duration="1500">
                 <img src="img/photo_david.png" alt="">
                 <h4>David Rivera</h4>
                 <p>20 ans</p>
                 <strong>Chargé du design</strong>
             </div>
-            <div class="nicolas" data-sal="slide-up" data-sal-duration="1500" data-sal-delay="250">
-                <img src="img/photo_nicolas.png" alt="">
-                <h4>Nicolas Louisin</h4>
-                <p>20 ans</p>
-                <strong>Chargé du développement</strong>
+                <div class="nicolas" data-sal="slide-up" data-sal-duration="1500" data-sal-delay="250">
+                    <img src="img/photo_nicolas.png" alt="">
+                    <h4>Nicolas Louisin</h4>
+                    <p>20 ans</p>
+                    <strong>Chargé du développement</strong>
+                </div>
             </div>
         </div>
-        </div>
+    </div>
     </main>
-
     <footer>
         <div class="conteneur">
             <a href="#">Se connecter</a>
@@ -251,7 +252,9 @@
 
     </footer>
 </body>
+
 <script src="sal.js"></script>
+
 <script>
     sal();
 </script>
