@@ -225,6 +225,11 @@ nav ul li .highlight {
 
 /*Visu4*/
 
+.visu4 img {
+    max-width: 100%;
+
+}
+
 .titreequipe {
     display: flex;
     justify-content: center;
@@ -261,7 +266,11 @@ nav ul li .highlight {
     font-family: "Open Sans", cursive;
     font-size: 1em;
     font-weight: 500;
+}
 
+.align2 strong {
+    font-family: "Open Sans", cursive;
+    font-size: 1em;
 }
 
 
