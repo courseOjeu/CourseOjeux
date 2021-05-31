@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9de5985e-3ec8-4b80-8219-82560da9dda1" name="Projets2 - Courseojeux">
+        <fileTransfer rootFolder="/home/clients/beff1e9e1f67837547cbdb5afe195a92" accessType="SFTP" host="jh4zk.ftp.infomaniak.com" port="22" sshConfigId="a25913d2-9718-4666-b22f-7109c3a61665" sshConfig="jh4zk_nicolaslouisin@jh4zk.ftp.infomaniak.com:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

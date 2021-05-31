@@ -1,0 +1,60 @@
+/*-------------------------podium-----------------------*/
+
+.notre-podium h1,h2 {
+    text-align: center;
+    color: #153053;
+}
+
+.notre-podium h1 {
+    font-family: 'BenchNine', sans-serif;
+    font-size: 3em;
+    margin-top: 1em;
+}
+
+.notre-podium h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: normal;
+    margin-bottom: 2em;
+}
+
+.notre-podium p {
+    font-family: 'BenchNine', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    color: #153053;
+    margin-top: 5em;
+    font-size: 1.4em;
+}
+
+.notre-podium .podium-img {
+    display: flex;
+    justify-content: center;
+}
+
+.notre-podium .podium-jeux .blanc-manger-coco, .uno, .monopoly {
+    display: flex;
+}
+
+.podium-jeux img{
+    width: 40%;
+    margin-left: 5em;
+}
+
+.notre-podium .podium-jeux {
+    margin-top: 5em;
+    margin-bottom: 10em;
+}
+.notre-podium .podium-jeux h2 {
+    text-align: center;
+    margin-top: 3em;
+}
+.notre-podium .podium-jeux p {
+    margin-left: 5em;
+    max-width: 500px;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+/*------------------------------------------------*/
+
+

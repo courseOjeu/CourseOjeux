@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CourseOJeux</title>
+    <link rel="stylesheet" href="css/accueil.css">
+    <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <script src="https://kit.fontawesome.com/d031bba9ae.js" crossorigin="anonymous"></script>
+    <!--VueJS-->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!--Vue-router pour injection des composants -->
+    <script src="https://unpkg.com/vue-router"></script>
+
+</head>
+<body>
+
+<div id="app">
+    <header>
+        <div class="logo">
+            <router-link :to="{name: 'Home'}">
+                <img src="../img/Logo_CourseOjeux.svg" alt="">
+            </router-link>
+        </div>
+
+        <div class="search-box">
+            <input class="search-txt" type="text" name ="" placeholder="Rechercher un jeu">
+            <a class="search-btn" href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Nos Catégories</a><div class="poly"></div>
+                    <ul>
+                        <li>
+                            <router-link :to="{name:'Podium'}">
+                                Notre top 3
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{name:'Plateau'}">
+                                Plateau
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{name:'Cartes'}">
+                                Cartes
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{name:'Ambiance'}">
+                                Ambiance
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{name:'Strategie'}">
+                                Stratégie
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{name:'Enquete'}">
+                                Enquête
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{name:'Logique'}">
+                                Logique
+                            </router-link>
+                        <li>
+                            <router-link :to="{name:'Connaissance'}">
+                                Connaissance
+                            </router-link>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">Forum & Partage</a><div class="poly"></div>
+                    <ul>
+                        <li><a href="">Forum</a></li>
+                        <li><a href="">Partage</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <router-link :to="{name:'Contact'}">
+                        Contact<div class="poly"></div>
+                    </router-link>
+                </li>
+                <li><a href="">Faire un don</a><div class="poly"></div></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <!-- point insertion des templates (component) -->
+        <router-view></router-view>
+    </div>
+
+    <footer>
+        <div class="conteneur">
+            <div class="suivre">
+                <p>@CourseOjeux</p>
+                <p>@courseojeux</p>
+            </div>
+
+            <div class="informations">
+                <p>FAQ</p>
+                <p>Qui somme nous ?</p>
+                <p>Contactez-nous</p>
+            </div>
+
+            <div class="politique">
+                <p>Conditions générale</p>
+                <p>Politique de confidentialité</p>
+                <p>Politique en matière de cookies</p>
+                <p>Gérez mes préférences</p>
+            </div>
+        </div>
+
+        <div class="bas">
+            <h5>Projet réalisé dans un cadre pédagogique au département MMI de l’IUT de Montbéliard
+                <br/>
+                Copyright 2021-2022  - Tous droits réservés - Mentions légales</h5>
+            <img src="../img/logo-mmi-propre.png" alt="">
+        </div>
+
+    </footer>
+</div>
+
+<!-- les composants utilisées-->
+<script src="component/home.vue.js"></script>
+<script src="component/contact.vue.js"></script>
+<script src="component/podium.vue.js"></script>
+<script src="component/ambiance.vue.js"></script>
+<script src="component/cartes.vue.js"></script>
+<script src="component/plateau.vue.js"></script>
+<script src="component/connaissance.vue.js"></script>
+<script src="component/enquete.vue.js"></script>
+<script src="component/logique.vue.js"></script>
+<script src="component/strategie.vue.js"></script>
+
+
+<script>
+    // les routages / navigation de l'application
+    var routes = [
+        {path: '/',                          name:"Home",         component:Home},
+        {path: '/contact',                   name:"Contact",      component:Contact},
+        {path: '/categorie.cartes',          name:"Cartes",      component:Cartes},
+        {path: '/categorie.ambiance',        name:"Ambiance",      component:Ambiance},
+        {path: '/categorie.plateau',         name:"Plateau",      component:Plateau},
+        {path: '/categorie.connaissance',    name:"Connaissance",      component:Connaissance},
+        {path: '/categorie.enquete',         name:"Enquete",      component:Enquete},
+        {path: '/categorie.logique',         name:"Logique",      component:Logique},
+        {path: '/categorie.strategie',       name:"Strategie",      component:Strategie},
+        {path: '/podium',                    name:"Podium",      component:Podium},
+    ]
+    // initialisation du routeur
+    var router = new VueRouter ({
+        routes: routes
+
+    })
+
+    // vue de l'application (id="app")
+    var app = new Vue ({
+        el:"#app",
+        router:router
+
+    })
+</script>
+
+</body>
+</html>

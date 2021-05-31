@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+
+/*-------------------------header-----------------------*/
+
+.logo img{
+    height: 100px;
+    width: auto;
+    margin-left: 5rem;
+}
+
+.search-box {
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #153053;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+.search-btn {
+    color: black;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.search-txt {
+    background: none;
+    border: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #153053;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 240px;
+}
+
+header nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+header nav ul li{
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+header nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #153053;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header nav ul li a:hover{
+    opacity: 0.5;
+}
+
+header ul li ul li{
+    display: none;
+}
+
+header ul li:hover ul li{
+    display: block;
+    background-color: white;
+}
+
+
+header nav{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+header>nav>ul{
+    border-bottom: solid 2px #EAB255;
+}
+
+header ul li:hover .poly{
+    width: 15px;
+    height: 7px;
+    background-image: url("../img/Polygone 1.svg");
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -5.5px;
+
+}
+
+/*-------------------------footer-----------------------*/
+
+footer {
+    background: url("../../img/Fond footer.png");
+    background-repeat: no-repeat;
+    height: 320px;
+
+
+
+}
+
+footer p,footer h5{
+    font-family: 'Josefin Sans', sans-serif ;
+    color: white;
+}
+
+footer .informations,footer .politique,footer .suivre{
+    display: inline-block;
+    margin: 0 auto;
+}
+
+footer .conteneur{
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+}
+
+footer .conteneur div{
+    padding-left:   10%;
+    padding-right: 10%;
+    margin-bottom: auto;
+    margin-top: auto;
+
+}
+
+footer img{
+    vertical-align: middle;
+    float: right;
+    padding-right: 15px;
+}
+
+footer h5{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+
+}
+
+footer .bas{
+    text-align: center;
+    padding-top: 10px;
+}
+
+footer .informations{
+    border-right: solid white;
+    border-left: solid white;
+}
+
+
+/*-----------------------Visu 1--------------------------*/
+
+.visu1 {
+    margin-left: 5rem;
+    margin-top: 3em;
+}
+
+.visu1 h1{
+    text-decoration: none;
+    color: #153053;
+    font-family: 'BenchNine', sans-serif;
+    font-size: 5em;
+    margin-bottom: 2rem;
+}
+
+.visu1 h2{
+    text-decoration: none;
+    color: #153053;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+    margin-bottom: 2rem;
+}
+
+.visu1 a{
+    text-decoration: none;
+    color: #153053;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2em;
+}
+
+.visu1 a:hover{
+    text-decoration: underline;
+    color: #153053;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.visu1 ul {
+    margin-top: 2em;
+}
+
+.visu1 ul li {
+    display: inline-block;
+}
+
+.visu1 ul li img {
+    margin-right: 2em;
+}
+
+.imagefondvisu1 img {
+    height: 750px;
+    width: auto;
+    position: absolute;
+    z-index: -9999;
+    top: 250px;
+    left: 800px;
+}
+
+/*-----------------------Visu 2--------------------------*/
+
+.visu2 {
+    margin-left: 5rem;
+    margin-top: 20em;
+    display: flex;
+    flex-flow: nowrap;
+    align-items: center;
+}
+
+.visu2 .selection {
+    margin-left: 10em;
+    max-width: 580px;
+}
+.visu2 .selection h3 {
+    font-family: 'BenchNine', sans-serif;
+    font-size: 3em;
+    color: #153053;
+}
+.visu2 .selection p {
+    font-family: 'Open Sans', sans-serif;;
+    font-size: 1.2em;
+    color: #153053;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+.visu2 .selection a {
+    background:  #445975;
+    padding: 0.5em 2em;
+    border-radius: 40px;
+    color: white;
+    font-size: 1.4em;
+    font-weight: lighter;
+    text-decoration: none;
+    font-family: BenchNine, cursive;
+    letter-spacing: .1rem;
+    text-align: center;
+}
+
+.visu2 .selection a:hover {
+    background:  #153053;
+    padding: 0.5em 2em;
+    border-radius: 40px;
+    color: white;
+    font-size: 1.4em;
+    font-weight: lighter;
+    text-decoration: none;
+    font-family: BenchNine, cursive;
+    letter-spacing: .1rem;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.imagevisu2 img {
+    height: 500px;
+    width: auto;
+}
+
+.imagefondvisu2 img{
+    height: 1000px;
+    width: auto;
+    position: absolute;
+    z-index: -9999;
+    left: -600px;
+}
+
+
+/*-----------------------Visu 3--------------------------*/
+
+.visu3 {
+    margin-top: 15em;
+    margin-bottom: 25em;
+}
+
+.visu3 .selection {
+    margin-left: 10rem;
+    max-width: 520px;
+}
+
+.visu3 .selection h3 {
+    font-family: 'BenchNine', sans-serif;
+    font-size: 3em;
+    color: #153053;
+}
+.visu3 .selection p {
+    font-family: 'Open Sans', sans-serif;;
+    font-size: 1.2em;
+    color: #153053;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+.visu3 .selection a {
+    background:  #445975;
+    padding: 0.5em 2em;
+    border-radius: 40px;
+    color: white;
+    font-size: 1.4em;
+    font-weight: lighter;
+    text-decoration: none;
+    font-family: BenchNine, cursive;
+    letter-spacing: .1rem;
+    text-align: center;
+}
+
+.visu3 .selection a:hover {
+    background:  #153053;
+    padding: 0.5em 2em;
+    border-radius: 40px;
+    color: white;
+    font-size: 1.4em;
+    font-weight: lighter;
+    text-decoration: none;
+    font-family: BenchNine, cursive;
+    letter-spacing: .1rem;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.imagevisu3 img {
+    height: 900px;
+    width: auto;
+    position: absolute;
+    z-index: -9999;
+    top: 1500px;
+    left: 950px;
+}
+
+
+
+
+
+
+
+
+
+
+

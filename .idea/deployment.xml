@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="Projets2 - Courseojeux" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="Projets2 - Courseojeux">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/sites/projets2-courseojeux.nicolaslouisin.fr" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

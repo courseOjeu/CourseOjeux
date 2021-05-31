@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+
+.categorie h2{
+    font-family: 'BenchNine', sans-serif;
+    color: #153053;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+    font-size: 2.5em;
+}
+
+.articles_container {
+    margin-left: 5em;
+    margin-right: 5em;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+.articles_container img {
+    width: 100%;
+    margin-bottom: 1.2em;
+}
+
+
+.articles_container #jeu1, #jeu2, #jeu3 {
+    margin-left: 1.5em;
+}
+
+.articles_container #jeu1 h3{
+    text-align: center;
+    color: #153053;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: normal;
+    margin-bottom: 1.5em;
+}
+
+.articles_container #jeu2 h3 {
+    text-align: center;
+    color: #153053;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: normal;
+    margin-bottom: 1.5em;
+
+}
+
+.articles_container #jeu3 h3{
+    text-align: center;
+    color: #153053;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: normal;
+    margin-bottom: 1.5em;
+
+}
+
