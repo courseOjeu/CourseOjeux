@@ -1,0 +1,65 @@
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10vw;
+    height: 10vw;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.Reseaux{
+    text-align: center;
+}
+
+.Reseaux img{
+    width: 2.75em;
+    height: 2.75em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+h2{
+    font-size: 4em;
+    color: #153053;
+    font-family: 'BenchNine', sans-serif;
+    margin: 5px;
+    width: auto;
+}
+
+input#prenom, #nom, #mail, #mdp, #mdp2, #mdpconnect, #mailconnect{
+    background-color: #E0E8EB;
+    border-color: #E0E8EB;
+    border-radius: 0.45em;
+    margin-bottom: 1em;
+    height: 2.5em;
+    width: 15em;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1em;
+}
+
+#forminscription, #connect{
+    border-color: #153053;
+    border-width: 0.10em;
+    border-radius: 0.7em;
+    color: #153053;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.25em;
+    width: 7em;
+    height: 1.5em;
+}
+
+.Img_fond img{
+    position: absolute;
+
+}
+.Img_fond #droit{
+    top: 0;
+    height: 100%;
+    right: 0;
+}
+.Img_fond #gauche{
+    top: 0;
+    height: 100%;
+    left: 0;
+}
