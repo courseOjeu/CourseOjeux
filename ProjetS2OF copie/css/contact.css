@@ -1,0 +1,126 @@
+.contact h2 {
+    font-family: 'BenchNine', sans-serif;
+    color: #153053;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+    font-size: 2.5em;
+}
+/*---------------------formulaire----------------------------*/
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0;
+    color: #153053;
+}
+
+
+.container_contact input[type=text], textarea, input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #E0E8EB;
+    background-color: #F4F5F6;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-right: 0;
+    margin-left: 0;
+    resize: vertical;
+}
+label{margin-right: 0;
+    margin-left: 0;
+    width: 100%;}
+
+input[type=submit] {
+    background-color: transparent;
+    color: #153053;
+    text-decoration: none;
+    padding: 0.5em 2em;
+    border: 3px solid #153053;
+    border-radius: 50px;
+    font-family: 'BenchNine', sans-serif;
+    font-size: 1.1em;
+    margin-bottom: 5em;
+}
+
+input[type=submit]:hover {
+    color: white;
+    background-color: #153053;
+    transition: 0.5s ease;
+}
+
+.container_contact {
+    box-sizing : border-box;
+    border-radius:5px;
+    background-color:transparent;
+    padding:20px;
+    width: 100%;
+    max-width: 440px;
+    margin:0 auto;
+}
+
+/*---------------------Notre équipe----------------------------*/
+
+.visu4 {
+    margin-bottom: 10em;
+}
+.visu4 img {
+    max-width: 100%;
+}
+
+.titreequipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 50px;
+    font-family: BenchNine, cursive;
+    font-size: 3em;
+}
+
+.align2 {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+
+}
+.bande {
+    max-width: 100%;
+    background: url("../../img/vague_derriere_profils.png");
+    background-repeat: no-repeat;
+    margin-bottom: -20px;
+
+}
+
+.align2 h4 {
+    font-family: "Josefin Sans", cursive;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.align2 p {
+    font-family: "Open Sans", cursive;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.align2 strong {
+    font-family: "Open Sans", cursive;
+    font-size: 1em;
+}
+
+.align2 img {
+    width: 220px;
+    height: 220px;
+}
+
+
+
+
+
+

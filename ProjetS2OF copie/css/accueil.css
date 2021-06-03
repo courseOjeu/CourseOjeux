@@ -9,6 +9,10 @@
     list-style-type: none;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /*-------------------------header-----------------------*/
 
 .logo img{
@@ -304,7 +308,7 @@ footer .informations{
 }
 
 .visu3 .selection {
-    margin-left: 10rem;
+    margin-left: 20%;
     max-width: 520px;
 }
 
@@ -353,7 +357,7 @@ footer .informations{
     position: absolute;
     z-index: -9999;
     top: 1500px;
-    left: 950px;
+    right: -20%;
 }
 
 

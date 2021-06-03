@@ -5,21 +5,21 @@ var Ambiance = Vue.component('Ambiance',{
                 <div class="articles_container">
                     <div id="jeu1">
                         <h3> Blanc Manger Coco </h3>
-                        <img src="../../img/bmc_article.png" alt="" >
+                        <img src="../img/bmc_article.png" alt="" >
                         <p>Blanc-manger Coco est un jeu de cartes, idéal pour l’apéro entre amis. L’objectif est de rire de tout, grâce à des combinaisons de mots à l’esprit transgressif.</p>
                         <button> Voir l'article </button>
                     </div>
             
                     <div id="jeu2">
                         <h3> Nom jeu 2 </h3>
-                        <img src="../../img/Uno_article.png" alt="">
+                        <img src="../img/Uno_article.png" alt="">
                         <p> Description jeu 2 </p>
                         <button> Voir l'article </button>
                     </div>
             
                     <div id="jeu3">
                         <h3> Nom jeu 3 </h3>
-                        <img src="../../img/codenames_article.png" alt="">
+                        <img src="../img/codenames_article.png" alt="">
                         <p> Description jeu 3 </p>
                         <button> Voir l'article </button>
                     </div>

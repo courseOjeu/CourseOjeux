@@ -26,7 +26,6 @@ if (isset($_POST['forminscription']))
             ("INSERT INTO `utilisateur` (`prenom`, `mot_de_passe`, `adresse_mail`, `nom`) VALUES (?, ?, ?, ?)");
             $insertmbr->execute(array($prenom, $mdp, $mail, $nom));
             $erreur = "Votre compte a bien été créé.";
-
         }
         else
         {
@@ -113,7 +112,7 @@ if (isset($_POST['forminscription']))
     </form>
     <?php
     if (isset($erreur)){
-        echo $erreur;
+        echo '<font face="Josefin Sans" color="#153053">' .$erreur."</font>";
     }
     ?>
 </div>

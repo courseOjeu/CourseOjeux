@@ -78,7 +78,7 @@ nav ul li .highlight {
 
 .illuaccueil {
     float: right;
-    margin-top: -65em;
+    margin-top: -67em;
     margin-right: -3em;
 }
 
@@ -107,7 +107,7 @@ nav ul li .highlight {
 
 .hero a {
     position: absolute;
-    left: 25em;
+    right: 10%;
     top: 22em;
     background:#445975;
     padding: 1em 3em;
@@ -123,7 +123,7 @@ nav ul li .highlight {
 
 .hero a:hover {
     position: absolute;
-    left: 25em;
+    right: 10%;
     top: 22em;
     background:  #153053;
     padding: 1em 3em;

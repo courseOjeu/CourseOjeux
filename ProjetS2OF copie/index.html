@@ -6,13 +6,14 @@
     <link rel="stylesheet" href="css/accueil.css">
     <link rel="stylesheet" href="css/categories.css">
     <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/forum_partage.css">
     <script src="https://kit.fontawesome.com/d031bba9ae.js" crossorigin="anonymous"></script>
     <!--VueJS-->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <!--Vue-router pour injection des composants -->
     <script src="https://unpkg.com/vue-router"></script>
     <link rel="icon" type="image/png" href="../img/Logo_CourseOjeux.svg">
-
 
 </head>
 <body>
@@ -78,8 +79,16 @@
                 </li>
                 <li><a href="">Forum & Partage</a><div class="poly"></div>
                     <ul>
-                        <li><a href="">Forum</a></li>
-                        <li><a href="">Partage</a></li>
+                        <li>
+                            <router-link :to="{name:'Forum'}">
+                                Forum
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{name:'Partage'}">
+                                Partage
+                            </router-link>
+                        </li>
                     </ul>
                 </li>
                 <li>
@@ -87,7 +96,12 @@
                         Contact<div class="poly"></div>
                     </router-link>
                 </li>
-                <li><a href="">Faire un don</a><div class="poly"></div></li>
+                <li>
+                    <a href="../dons.html">
+                        Faire un don
+                    </a>
+                    <div class="poly"></div>
+                </li>
             </ul>
         </nav>
     </header>
@@ -139,6 +153,8 @@
 <script src="component/enquete.vue.js"></script>
 <script src="component/logique.vue.js"></script>
 <script src="component/strategie.vue.js"></script>
+<script src="component/forum.vue.js"></script>
+<script src="component/partage.vue.js"></script>
 
 
 <script>
@@ -154,6 +170,8 @@
         {path: '/categorie.logique',         name:"Logique",      component:Logique},
         {path: '/categorie.strategie',       name:"Strategie",      component:Strategie},
         {path: '/podium',                    name:"Podium",      component:Podium},
+        {path: '/forum',                     name:"Forum",      component:Forum},
+        {path: '/partage',                   name:"Partage",      component:Partage},
     ]
     // initialisation du routeur
     var router = new VueRouter ({
@@ -165,9 +183,7 @@
     var app = new Vue ({
         el:"#app",
         router:router
-
     })
 </script>
-
 </body>
 </html>

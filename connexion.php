@@ -2,33 +2,30 @@
 
 session_start();
 
-$bdd = new PDO(
-    'mysql:host=localhost;dbname=courseojeux',
-    'root',
-    'root');
+$bdd = new PDO('mysql:host=localhost:3306;dbname=courseojeux', 'root', 'root');
 
-if (isset($_POST['formconnect'])){
-    $mailconnect = htmlspecialchars($_POST['mailconnect']);
-    $mdpconnect = sha1($_POST['mdpconnect']);
-    if (!empty($mailconnect) AND !empty($mdpconnect)){
+    if (isset($_POST['formconnect'])){
+        $mailconnect = htmlspecialchars($_POST['mailconnect']);
+        $mdpconnect = sha1($_POST['mdpconnect']);
+        if (!empty($mailconnect) AND !empty($mdpconnect)){
 
-        $requser = $bdd->prepare("SELECT * FROM `utilisateur` WHERE `adresse_mail` = ? AND `mot_de_passe = ?");
-        $requser->execute(array($mailconnect, $mdpconnect));
-        $userexit = $requser->rowCount();
-        if ($userexit == 1){
-            $userinfo = $requser->fetch();
-            $_SESSION['id_utilisateur'] = $userinfo['id_utilisateur'];
-            $_SESSION['prenom'] = $userinfo['prenom'];
-            $_SESSION['mail'] = $userinfo['adresse_mail'];
-            header("Location: profil.php?id=".$_SESSION['id']);
-        }else{
-            $erreur ="Mauvais mail ou mot de passe";
+            $requser = $bdd->prepare("SELECT * FROM utilisateur WHERE adresse_mail = ? AND mot_de_passe = ?");
+            $requser->execute(array($mailconnect, $mdpconnect));
+            $userexit = $requser->rowCount();
+            if ($userexit == 1){
+                $userinfo = $requser->fetch();
+                $_SESSION['id_utilisateur'] = $userinfo['id_utilisateur'];
+                $_SESSION['prenom'] = $userinfo['prenom'];
+                $_SESSION['mail'] = $userinfo['adresse_mail'];
+                header("Location: Profile.php?id=".$_SESSION['id_utilisateur']);
+            }else{
+                $erreur ="Mauvais mail ou mot de passe";
+            }
+        }
+    else{
+            $erreur = "Tous les champs doivent être complété";
         }
     }
-    else{
-        $erreur = "Tous les champs doivent être complété";
-    }
-}
 ?>
 
 <html>
@@ -42,16 +39,16 @@ if (isset($_POST['formconnect'])){
 <body>
 
 <header>
-    <img id="logo" src="img/Logo_CourseOjeux.svg" alt="Logo CourseOJeux">
+    <img id="logo" src="Images/Logo.svg" alt="Logo CourseOJeux">
     <div class="Reseaux">
-        <img src="img/Twitter.svg" alt="Logo Twitter">
-        <img src="img/Instagram.svg" alt="Logo Instagram">
+        <img src="Images/Twitter.svg" alt="Logo Twitter">
+        <img src="Images/Instagram.svg" alt="Logo Instagram">
     </div>
 </header>
 
 <div class="Img_fond">
-    <img src="img/fb_g.svg" alt="Fond" id="gauche">
-    <img src="img/fb_d.svg" alt="Fond" id="droit">
+    <img src="Images/SVG/fb_g.svg" alt="Fond" id="gauche">
+    <img src="Images/SVG/fb_d.svg" alt="Fond" id="droit">
 </div>
 
 <div align="center">
@@ -69,7 +66,7 @@ if (isset($_POST['formconnect'])){
 
             <tr>
                 <td>
-                    <input type="password" placeholder="Votre mot de passe" id="mdpconnect" name="mdpconnect">
+                    <input type="text" placeholder="Votre mot de passe" id="mdpconnect" name="mdpconnect">
                 </td>
             </tr>
 
@@ -91,4 +88,3 @@ if (isset($_POST['formconnect'])){
 
 </body>
 </html>
-
