@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="153" height="153" viewBox="0 0 153 153">
+  <g id="Basge2" transform="translate(1077 1541)">
+    <circle id="badge_2" data-name="badge 2" cx="76.5" cy="76.5" r="76.5" transform="translate(-1077 -1541)" fill="#f4f5f6"/>
+    <g id="SVG_badge_2" data-name="SVG badge 2" transform="translate(-1040.876 -1509.726)">
+      <path id="Tracé_1562" data-name="Tracé 1562" d="M17,6V30.495L38.613,52.107,60.226,30.495V6Z" transform="translate(1.763 1.763)" fill="#f3a845"/>
+      <path id="Tracé_1563" data-name="Tracé 1563" d="M22,6V29.054L36.409,43.462,50.817,29.054V6Z" transform="translate(3.968 1.763)" fill="#aa2b24"/>
+      <path id="Tracé_1564" data-name="Tracé 1564" d="M33.763,43.462,39.527,37.7V6H28V37.7Z" transform="translate(6.613 1.763)" fill="#d24034"/>
+      <path id="Tracé_1565" data-name="Tracé 1565" d="M13,2H67.752V7.763H13Z" transform="translate(0 0)" fill="#686868"/>
+      <path id="Tracé_1566" data-name="Tracé 1566" d="M37.29,41l5.343,9.961,11.948,1.6L45.935,60.31l2.04,10.948L37.29,66.09,26.6,71.258l2.04-10.948L20,52.557l11.948-1.6Z" transform="translate(3.086 17.193)" fill="#eecc61"/>
+      <path id="Tracé_1567" data-name="Tracé 1567" d="M38.731,62.613a4.323,4.323,0,0,0,4.323-4.323V51.017l-.421-.056L37.29,41l-5.343,9.961L20,52.557l8.645,7.75-.432,2.305Z" transform="translate(3.086 17.193)" fill="#f1d681"/>
+      <g id="Groupe_283" data-name="Groupe 283" transform="translate(13 2)">
+        <path id="Tracé_1568" data-name="Tracé 1568" d="M32.441,42.763l1.441,2.686V37l-1.441,1.441L31,37v8.449Z" transform="translate(-5.065 13.43)" fill="#939393"/>
+        <path id="Tracé_1569" data-name="Tracé 1569" d="M13,4.882H59.107A2.882,2.882,0,0,0,61.989,2H13Z" transform="translate(-13 -2)" fill="#939393"/>
+      </g>
+    </g>
+  </g>
+</svg>

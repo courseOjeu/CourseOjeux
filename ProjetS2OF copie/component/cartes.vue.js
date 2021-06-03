@@ -36,7 +36,7 @@ var Cartes = Vue.component('Cartes',{
     mounted(){
         // Requete Ajax par Axios pour la liste des villageois
         // du backend
-        axios.get('http://localhost:8888/ProjetS2OF/listeJeu.php')
+        axios.get('../listeJeu.php')
             // récupération des données
             .then(response => {
                 this.listeJeu = response.data;

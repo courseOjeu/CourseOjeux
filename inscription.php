@@ -1,9 +1,7 @@
 <?php
-$bdd = new PDO(
-    'mysql:host=localhost;dbname=courseojeux',
+$bdd = new PDO('mysql:host=localhost;dbname=courseojeux',
     'root',
-    'root'
-);
+    'root');
 
 if (isset($_POST['forminscription']))
 {

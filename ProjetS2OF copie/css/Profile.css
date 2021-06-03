@@ -1,0 +1,73 @@
+ div #couverture{
+     width: 100%;
+
+}
+ body{
+     margin: 0;
+ }
+
+ .photo-profil img{
+     clip-path: circle(35%);
+     height: 50%;
+     margin-top: -15%;
+ }
+
+ .edit{
+     background-image: url("Images/fond_Marion.svg") ;
+     width: 100%;
+     height: 25%;
+     background-repeat: no-repeat;
+     margin-left: 20%;
+     margin-top: -20%;
+ }
+
+ .edit h2{
+     font-family: BenchNine, sans-serif;
+     color: white;
+     margin-left: 10%;
+     margin-top: 6%;
+     padding-top: 2.5%;
+     font-size: 2.5em;
+
+ }
+
+ .glo .badges{
+     display: inline-block;
+ }
+
+ .jeux, .badges{
+     width: 49%;
+     vertical-align: top;
+ }
+ .jeux div p{
+     display: inline-block;
+ }
+
+ .glo{
+
+     display: inline-block;
+ }
+
+ .glo div{
+     display: inline-block;
+     text-align: center;
+ }
+
+ .glo div h3{
+     font-family: BenchNine, sans-serif;
+     font-size: 1.5em;
+     color: #153053;
+ }
+
+ .jeux p{
+     font-family: BenchNine,sans-serif;
+     font-size: 1.3em;
+     margin-bottom: 20px;
+ }
+
+ .badges img{
+     width: 22%;
+     margin-left: 10px;
+     margin-right: 10px;
+     margin-bottom: 10px;
+ }

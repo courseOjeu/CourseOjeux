@@ -9,7 +9,7 @@ Debut de profile :
 
 session_start();
 
-$bdd = new PDO('mysql:host=localhost:3306;dbname=courseojeux', 'root', 'root');
+$bdd = new PDO('mysql:host=localhost;dbname=courseojeux', 'root', 'root');
 
 if (isset($_GET['id_utilisateur']) AND $_GET['id_utilisateur'] > 0) {
     $getid = intval($_GET['id_utilisateur']);

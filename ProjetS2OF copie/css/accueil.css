@@ -21,10 +21,50 @@ body {
     margin-left: 5rem;
 }
 
+.connexion {
+    position: absolute;
+    top: 7%;
+    right: 5%;
+
+}
+
+.connexion li {
+    display: inline-block;
+}
+
+.connexion li a {
+    margin-left: 5px;
+    color: #F4B03E;
+    text-decoration: none;
+}
+.connexion li:nth-child(2) a {
+    margin-left: 5px;
+    color: #F4B03E;
+    text-decoration: none;
+    border: 2px solid #F4B03E;
+    border-radius: 50px;
+    padding: 0.5em 2em;
+}
+
+.connexion li:nth-child(2) a:hover {
+    margin-left: 5px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #F4B03E;
+    background-color: #F4B03E;
+    border-radius: 50px;
+    padding: 0.5em 2em;
+    transition: 0.5s ease;
+}
+
+.connexion li:nth-child(2){
+    margin-left: 5px;
+}
+
 .search-box {
     position: absolute;
     top: 5%;
-    left: 40%;
+    left: 35%;
     height: 40px;
     background: transparent;
     border: 1px solid #153053;

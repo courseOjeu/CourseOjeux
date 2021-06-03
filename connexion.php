@@ -2,7 +2,9 @@
 
 session_start();
 
-$bdd = new PDO('mysql:host=localhost:3306;dbname=courseojeux', 'root', 'root');
+$bdd = new PDO('mysql:host=localhost;dbname=courseojeux',
+    'root',
+    'root');
 
     if (isset($_POST['formconnect'])){
         $mailconnect = htmlspecialchars($_POST['mailconnect']);
@@ -17,7 +19,7 @@ $bdd = new PDO('mysql:host=localhost:3306;dbname=courseojeux', 'root', 'root');
                 $_SESSION['id_utilisateur'] = $userinfo['id_utilisateur'];
                 $_SESSION['prenom'] = $userinfo['prenom'];
                 $_SESSION['mail'] = $userinfo['adresse_mail'];
-                header("Location: Profile.php?id=".$_SESSION['id_utilisateur']);
+                header("Location: profile.php?id=".$_SESSION['id_utilisateur']);
             }else{
                 $erreur ="Mauvais mail ou mot de passe";
             }
@@ -39,16 +41,16 @@ $bdd = new PDO('mysql:host=localhost:3306;dbname=courseojeux', 'root', 'root');
 <body>
 
 <header>
-    <img id="logo" src="Images/Logo.svg" alt="Logo CourseOJeux">
+    <img id="logo" src="img/Logo_CourseOjeux.svg" alt="Logo CourseOJeux">
     <div class="Reseaux">
-        <img src="Images/Twitter.svg" alt="Logo Twitter">
-        <img src="Images/Instagram.svg" alt="Logo Instagram">
+        <img src="img/Twitter.svg" alt="Logo Twitter">
+        <img src="img/Instagram.svg" alt="Logo Instagram">
     </div>
 </header>
 
 <div class="Img_fond">
-    <img src="Images/SVG/fb_g.svg" alt="Fond" id="gauche">
-    <img src="Images/SVG/fb_d.svg" alt="Fond" id="droit">
+    <img src="img/fb_g.svg" alt="Fond" id="gauche">
+    <img src="img/fb_d.svg" alt="Fond" id="droit">
 </div>
 
 <div align="center">
