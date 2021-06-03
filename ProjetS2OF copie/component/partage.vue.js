@@ -1,12 +1,15 @@
 var Partage = Vue.component('Partage',{
     template:`
             <main class="partage">
+            <router-link :to="{name:Home}">
                 <h2>Partagez votre jeu</h2>
+                </router-link>
                 <div class="champ_partage">
                     <form>
                         <input type="text" id="fname" name="firstname" placeholder="Votre jeu">
                         <input type="text" id="fname" name="lastname" placeholder="Sa catégorie">
                         <input type="submit" value="Ajouter">
+                        <router-link :to="{name:Home}">
                     </form> 
                 </div>
                 <div class="ajout_jeu">
